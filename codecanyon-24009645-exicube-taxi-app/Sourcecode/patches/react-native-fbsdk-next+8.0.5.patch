@@ -1,0 +1,16 @@
+diff --git a/node_modules/react-native-fbsdk-next/android/build.gradle b/node_modules/react-native-fbsdk-next/android/build.gradle
+index 6291279..3823e6e 100644
+--- a/node_modules/react-native-fbsdk-next/android/build.gradle
++++ b/node_modules/react-native-fbsdk-next/android/build.gradle
+@@ -44,10 +44,8 @@ repositories {
+     google()
+ }
+ 
+-def FACEBOOK_SDK_VERSION = safeExtGet('facebookSdkVersion', '13.+')
+-
+ dependencies {
+     //noinspection GradleDynamicVersion
+     implementation "com.facebook.react:react-native:+"  // From node_modules
+-    implementation "com.facebook.android:facebook-android-sdk:${FACEBOOK_SDK_VERSION}"
++    implementation "com.facebook.android:facebook-android-sdk:13.1.0"
+ }
